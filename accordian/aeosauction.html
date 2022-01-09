@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aeosauction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style type="text/css" media="screen">
+
+  body{
+    background-color: #DCDCDC ;
+  }
+
+   .bidder_title{
+      background-color: #209698;
+      padding: 10px 0 ;
+      text-align: center;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #db237f;
+   display: inline;
+   padding-left: 30px ;
+   padding-right: 30px;
+}
+
+  .btn-light, .btn-light:hover, .btn-light:active, .btn-light:visited {
+      background-color: white;
+      padding-left: 154px;
+      padding-right: 154px;
+      border: solid white;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 5px;
+      color:  #209698;
+      margin-top: 13px;
+    }
+
+   .total_slot, .total_time {
+      background-color: white;
+      max-width: 100%;
+      border: solid white;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 5px;
+      font-weight: 500;
+      color: gray;
+   }
+
+   .total_slot{
+    margin-top: 15px;
+   }
+
+   .total_big {
+      font-size: 18px;
+      font-weight: 600;
+      color:  #209698;
+
+   }
+
+   .image{
+    margin-top: 15px;
+     background-color: #209698;
+     text-align: center;
+
+   }
+
+    .left-image{
+      max-width: 100%;
+      height: 300px;
+     }
+
+    .Start_Auction{
+       background-color: #db237f;
+   display: inline;
+   padding-left: 30px ;
+   padding-right: 30px;
+   margin-bottom: 50px;
+    }
+
+    .bidder_list{
+      background-color: white;
+      max-width: 100%;
+      text-align: center;
+      border: solid white;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 5px;
+      font-weight: 500;
+      color: gray;
+    }
+
+    .border_color{
+      border-color: black;
+    }
+
+    
+.accordion {
+  background-color: #ffe9f0;
+  color: #FB236C;
+  font-family: "Varela Round", "Montserrat", "Quicksand", sans-serif;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ffe9f0;
+}
+
+.accordion:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: 
+
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1 class="bidder_title"> Aeos Auction Live Bidder </h1>
+
+  <div class="row">
+    <div class="col-sm-5 border">
+    <button type="button" class="btn btn-primary d-block load_campain">Load Campaign</button>
+    <button type="button" class="btn btn-light lnaugural_Sales">lnaugural Sales</button>
+
+
+     <div class="image">
+    <img class="left-image" src="https://aeosauctions.com/app/uploads/2021/12/191.jpg" alt="aeosauction">
+  </div>
+
+    <p class="total_slot"> <span class="total_big">Total Slot: </span> 41</p>
+    <p class="total_time"> <span class="total_big">Start Time: </span> 13:30</p>
+
+    <button type="button" class="btn btn-primary d-block Start_Auction">Start Auction</button>
+
+
+  </div> <! column 1 end>
+
+
+
+    <div class="col-sm-7 border border_color">
+
+      <p class="bidder_list"> <span class="total_big">Bidder List: </span> 25</p>
+
+      <table class="table table-bordered border_color">
+  <thead>
+    <tr>
+      <th scope="col">Paddle#</th>
+      <th scope="col">Bidder</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Online</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Live</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark</td>
+      <td>Proxy</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Jacob</td>
+      <td>Proxy</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Mark</td>
+      <td>Web</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Jacob</td>
+      <td>Web</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Mark</td>
+      <td>Web</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Jacob</td>
+      <td>Web</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Mark</td>
+      <td>Web</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Jacob</td>
+      <td>Web</td>
+    </tr>
+  
+  </tbody>
+</table>
+
+
+     </div> <! Column 2 end>
+    
+            
+  </div><! row end>
+
+
+</div> <! container end>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
